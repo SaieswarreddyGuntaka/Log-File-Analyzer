@@ -27,12 +27,12 @@ Built using:
 ## 📁 Project Structure
 
 
-- log-file-analyzer/
- -├── analyze\_logs.py       # Main script for log parsing and analysis
- -├── sample.log            # Sample Apache-style log file for testing
- -└── README.md             # Documentation
-
-````
+```
+log-file-analyzer/
+├── analyze_logs.py # Main script for log parsing and analysis
+├── sample.log # Sample Apache-style log file for testing
+└── README.md # Documentation
+```
 
 ---
 
