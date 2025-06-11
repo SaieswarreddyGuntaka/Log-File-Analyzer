@@ -1,4 +1,3 @@
-```markdown
 # 🧾 Log File Analyzer (Beginner-Friendly)
 
 A simple Python script that reads and analyzes Apache-style web server logs to provide insights such as:
@@ -27,12 +26,11 @@ Built using:
 
 ## 📁 Project Structure
 
-```
 
-log-file-analyzer/
-├── analyze\_logs.py       # Main script for log parsing and analysis
-├── sample.log            # Sample Apache-style log file for testing
-└── README.md             # Documentation
+- log-file-analyzer/
+ -├── analyze\_logs.py       # Main script for log parsing and analysis
+ -├── sample.log            # Sample Apache-style log file for testing
+ -└── README.md             # Documentation
 
 ````
 
@@ -46,8 +44,6 @@ log-file-analyzer/
 git clone https://github.com/yourusername/log-file-analyzer.git
 cd log-file-analyzer
 ````
-
-Or [download the ZIP](#) and extract it.
 
 ---
 
