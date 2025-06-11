@@ -1,0 +1,40 @@
+
+---
+
+### 🐍 `analyze_logs.py`
+
+```python
+import re
+from collections import Counter
+
+# File name of the log
+log_file = "sample.log"
+
+# Regular expression to extract IP, path, and status code from Apache logs
+log_pattern = r'^(\\S+) - - \\[.*?\\] "\\S+ (\\S+).*?" (\\d{3})'
+
+# Counters for IPs, paths, and error codes
+ip_counter = Counter()
+path_counter = Counter()
+error_counter = Counter()
+
+# Read the log file line by line
+with open(log_file, 'r') as file:
+    for line in file:
+        match = re.match(log_pattern, line)
+        if match:
+            ip, path, status = match.groups()
+            ip_counter[ip] += 1
+            path_counter[path] += 1
+            if status.startswith('4') or status.startswith('5'):
+                error_counter[status] += 1
+
+# Display results
+print("Top 5 IP addresses:")
+print(ip_counter.most_common(5))
+print("\nTop 5 Requested Paths:")
+for path, count in path_counter.most_common(5):
+    print(f"{path} - {count}")
+print("\nError Code Summary:")
+for status, count in error_counter.items():
+    print(f"{status} - {count}")
