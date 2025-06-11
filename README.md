@@ -41,7 +41,7 @@ log-file-analyzer/
 ### 1️. Clone or Download the Repository
 
 ```bash
-git clone https://github.com/yourusername/log-file-analyzer.git
+git clone https://github.com/SaieswarreddyGuntaka/Log-File-Analyzer
 cd log-file-analyzer
 ````
 
