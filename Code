@@ -1,9 +1,4 @@
-
 ---
-
-### 🐍 `analyze_logs.py`
-
-```python
 import re
 from collections import Counter
 
